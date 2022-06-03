@@ -28,6 +28,13 @@ switch $cfg(example) {
         exec cp -rf "$hw_dir/hdl/operators/examples/hll/." "$proj_dir/hdl/config_0"
     }
 
+    "clean_hls" {
+        puts "Clean HLS template"
+
+        # Add source files
+        exec cp -rf "$hw_dir/hdl/operators/examples/clean_hls/." "$proj_dir/hdl/config_0"
+    }
+
     "service_aes" {
         puts "Coyote service (AES). Daemon example."
 
